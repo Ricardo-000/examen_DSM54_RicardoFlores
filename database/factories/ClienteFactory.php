@@ -27,7 +27,7 @@ class ClienteFactory extends Factory
             'direccion' => $this->faker->text(15),
             'telefono' => $this->faker->number(8),
             'status_id' => $this->faker->boolval,
-            'tipo' => $this->faker->word,
+            'tipo' => $this->faker->word
         ];
     }
 }

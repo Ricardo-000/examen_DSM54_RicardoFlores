@@ -27,7 +27,7 @@ class ProductosFactory extends Factory
             'cantidad' => $this->faker->number,
             'descripcion' => $this->faker->text(800),
             'precio' => $this->faker->number,
-            'imagen' => $this->faker->imageUrl(1280,720),
+            'imagen' => $this->faker->imageUrl(1280,720)
         ];
     }
 }

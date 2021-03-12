@@ -28,7 +28,7 @@ class PostFactory extends Factory
             'categoria_id' => rand(1,100),
             'venta_id' => rand(1,100),
             'productos_id' => rand(1,100),
-            'cliente_id' => rand(1,100),
+            'cliente_id' => rand(1,100)
         ];
     }
 }

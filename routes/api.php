@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+//categoria
+Route:: apiResource ( 'categoría' , '\ App \ Http \ Controllers \ CategoriaController' );
+//post
+Route::apiResource('postresource','\App\Http\Controllers\PostController');
+
+Route::get('postCategory/{id}','\App\Http\Controllers\PostController@categoryPost');
+Route::get('postCategory','\App\Http\Controllers\PostController@categoryPosthome'); 
